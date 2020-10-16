@@ -1,0 +1,49 @@
+.container {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  height: 75vh;
+  width: 10vw;
+  padding-left: 2vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #dadde1;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #afadad;
+}
+
+.container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+  border-radius: 10px;
+
+  background: #ededed;
+}
+
+.menu summary {
+  outline: none;
+  cursor: pointer;
+}
+
+.menu ul {
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.menu ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu summary::-webkit-details-marker {
+  display: none;
+}

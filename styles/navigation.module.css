@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.aStyle {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.aStyle:visited {
+  color: #0070f3;
+}
+
+.hrStyle {
+  width: 80%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.buttonStyle {
+  background-color: rgba(0, 118, 255, 0.9);
+  color: #fff;
+  border: 1px solid rgba(0, 118, 255, 0.9);
+  padding: 0.25rem 1rem 0.35rem 1rem;
+  margin: 0;
+  font-size: large;
+  border-radius: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttonStyle:hover {
+  background-color: #fff;
+  color: rgba(0, 118, 255, 0.9);
+}
+
+.logoStyle {
+  transform: translateX(60px);
+  cursor: pointer;
+}
+
+.menuTogger {
+  z-index: 1;
+}
+
+.menuTogger input {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 40px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menuTogger i {
+  position: fixed;
+  z-index: 2;
+}
+
+.menuTogger input:checked ~ ul {
+  transform: none;
+}
+
+.menu {
+  position: fixed;
+  width: 300px;
+  height: calc(100vh + 70px);
+  margin: -100px 0 0 -50px;
+  padding-right: 50px;
+  padding-top: 150px;
+  z-index: 1;
+  background: white;
+  list-style-type: none;
+  border-right: 1px #dadde1 solid;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu summary :hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.menu li :hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.menu summary {
+  outline: none;
+  cursor: pointer;
+}
+
+.menu summary::-webkit-details-marker {
+  display: none;
+}
