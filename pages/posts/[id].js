@@ -3,6 +3,7 @@ import { useRouter, withRouter } from "next/router";
 import Date from "../../components/date";
 import Layout from "../../components/layout";
 import Navigation from "../../components/navigation";
+import RenderCode from "../../components/renderCode";
 
 import { getAllPostIds, getPostData, getSortedPostsData } from "../../lib/post";
 import utilStyles from "../../styles/utils.module.css";
@@ -39,10 +40,12 @@ function Post({ postData, allPostsData: data }) {
           <div className={utilStyles.lightText}>
             <Date dateString={postData.date} />
           </div>
-          <div
+
+          <RenderCode value={postData.contentHtml} />
+          {/* <div
             style={{ fontSize: "18px" }}
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-          />
+          /> */}
         </article>
       </Layout>
     </>

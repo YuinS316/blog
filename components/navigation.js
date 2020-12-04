@@ -91,7 +91,7 @@ function Navigation({ allPostsData: data }) {
 
           <ul className={styles.menu}>
             {tags.map((item, index) => (
-              <details id={item}>
+              <details key={item}>
                 <summary>
                   <StyledTag
                     id={`item+${index}`}
