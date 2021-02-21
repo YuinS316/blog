@@ -28,3 +28,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## About
+
+这个是我使用nextjs制作的个人博客(？)雏形，基本上是将nextjs官网的入门教程稍微修改，将其改成类似docusarus[https://www.docusaurus.cn/] 的风格，并且增加了代码高亮功能。你只需要将编写好的markdown放到 /posts 文件夹下即可看到效果。至于在上面编写并直接上传到服务端的功能，我再研究下如何做到。
